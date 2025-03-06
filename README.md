@@ -84,6 +84,7 @@
    JOIN `course_teacher` ON `courses`.id = `course_teacher`.course_id
    JOIN `teachers` ON `teachers`.id = `course_teacher`.teacher_id
    WHERE `departments`.name = 'Dipartimento di Matematica'
+   GROUP BY `teachers`.id
 
 7. BONUS: Selezionare per ogni studente il numero di tentativi sostenuti
    per ogni esame, stampando anche il voto massimo. Successivamente,
